@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>title</th>
+            <th>price</th>
+            <th>is_expensive</th>
+        </tr>
+        {% for x in a %}
+        <tr>
+            <td>{{x.title}}</td>
+            <td>{{x.price}}</td>
+            <td>{{x.is_expensive}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
